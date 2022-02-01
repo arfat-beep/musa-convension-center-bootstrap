@@ -1,0 +1,101 @@
+/* font import =================== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* toast ============================ */
+.toast {
+  border: 3px solid #7ef00d;
+  border-left: 10px solid #7ef00d;
+  right: -20%;
+  opacity: 0;
+  background: #fff;
+  animation: animate 2s ease-out 0.2s forwards;
+}
+@keyframes animate {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+/* Package cards =================================== */
+.package-card {
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.package-card-special {
+  background-color: #3f87ff;
+  color: #fff;
+  transform: translate(0, -30px);
+}
+
+.list-group-item {
+  background: transparent;
+}
+
+.package-card-special .list-group-item {
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.package-card-special .fa-check {
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: rgba(82, 67, 194, 0.439);
+}
+.package-card-special .package-btn {
+  transition: all 0.5s ease;
+  background: #fff;
+}
+
+.fa-check {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(82, 67, 194, 0.103693);
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 4px;
+  color: #5243c2;
+}
+.package-btn {
+  margin-top: 40px;
+  background-color: #f496d211;
+  border-radius: 30px;
+}
+.package-card-hot {
+  position: absolute;
+  width: 100px;
+  background: #ff4e4e;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  top: -10px;
+  right: 20px;
+}
+.mia-bibi-bg-info {
+  background: #feeae9;
+}
+/* media query=============== */
+@media (min-width: 768px) {
+  .w-md-100 {
+    width: 100%;
+  }
+  .md-h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .md-h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .md-h1 {
+    font-size: 3rem;
+  }
+}
